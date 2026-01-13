@@ -79,3 +79,30 @@ To install co-simulation support:
 
 Go to the directory ``cosimulation/<platform>`` for your target platform
 and following the instructions in the ``README.txt`` file.
+
+Repository Organization
+-----------------------
+This repository is organized to support both the core MyHDL framework and derived projects:
+
+- **Core Library** (`/myhdl/`) - The main MyHDL package
+- **Examples** (`/example/`) - Reference implementations and tutorials
+- **Documentation** (`/doc/`) - Comprehensive project documentation
+- **Projects** (`/projects/`) - Independent projects built on MyHDL
+
+For detailed information about the repository structure, see:
+- **QUICK_START.md** - Quick reference guide
+- **PROJECT_STRUCTURE.md** - Detailed structure documentation
+- **projects/README.md** - Projects directory guide
+
+### Projects Directory
+
+The `/projects/` directory contains independent projects that leverage the MyHDL framework. Each project maintains its own structure, tests, and documentation while using the core MyHDL library.
+
+**Example Project**: `projects/Electroplate-Store-v1/` demonstrates a complete project template with:
+- Organized source code structure (`src/core/`, `src/modules/`, `src/utils/`)
+- Comprehensive testing (`tests/unit/`, `tests/integration/`)
+- Usage examples (`examples/`)
+- Documentation (`docs/`)
+- Configuration management (`config/`)
+
+To learn more, see the project README at `projects/Electroplate-Store-v1/README.md`.
